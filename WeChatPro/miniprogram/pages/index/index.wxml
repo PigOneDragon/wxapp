@@ -1,13 +1,8 @@
 <view class="swiper">
-  <swiper indicator-dots="{{indicatorDots}}" 
-  autoplay="{{autoplay}}" 
-  interval="{{interval}}" 
-  duration="{{duration}}"
-  indicator-color="{{indicatorColor}}" 
-  indicator-active-color="{{indicatorActiveColor}}">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{indicatorActiveColor}}"  circular="true">
     <block wx:for="{{imgList}}" wx:key="index">
       <swiper-item>
-        <image src="{{item.url}}" class="img" />
+        <image src="{{item.url}}" class="img" mode="aspectFill" />
       </swiper-item>
     </block>
   </swiper>
@@ -23,31 +18,131 @@
   <!-- 新闻公告 -->
   <view class="m-news">
     <view class="l">
-        <image src="../../images/news.png" mode="aspectFit"></image>
-        <!-- <text>新闻公告</text> -->
-        <text class="txt">新闻\n公告</text>
+      <image src="../../images/news.png" mode="widthFix"></image>
+      <!-- <text>新闻公告</text> -->
+      <text class="txt">新闻\n公告</text>
     </view>
     <view class="r">
       <swiper class="news_s" vertical="true" display-multiple-items="2" autoplay="true" circular="true" interval="3000">
         <block>
           <swiper-item>
-              新闻1
+            <navigator url="">保险学院在2019年度（新加坡）全球品…</navigator>
           </swiper-item>
           <swiper-item>
-            新闻2
+            <navigator url="">中国人寿携手CBA发布国内首款职业体育…</navigator>
           </swiper-item>
-           <swiper-item>
-             新闻3
-           </swiper-item>
-           <swiper-item>
-             新闻4
-           </swiper-item>
+          <swiper-item>
+            <navigator url="">保险学院在2019年度（新加坡）全球品…</navigator>
+          </swiper-item>
+          <swiper-item>
+            <navigator url="">中国人寿携手CBA发布国内首款职业体育…</navigator>
+          </swiper-item>
         </block>
       </swiper>
     </view>
   </view>
-    
+  <!-- iconList -->
+  <view class="ul-list1">
+    <view class="item border-right">
+      <view class="img">
+        <image src="../../images/i1.png" mode="aspectFit"></image>
+      </view>
+      <view class="txt">
+        <view class="tit">推广海报</view>
+        <view class="desc">邀请好友</view>
+        <view class="desc">享收益</view>
+      </view>
+    </view>
+    <view class="item">
+      <view class="img">
+        <image src="../../images/i2.png" mode="aspectFit"></image>
+      </view>
+      <view class="txt">
+        <view class="tit">学习专区</view>
+        <view class="desc">更多知识</view> 
+        <view class="desc">提能力</view>
+      </view>
+    </view>
+    <view class="item border-right">
+      <view class="img">
+        <image src="../../images/i3.png" mode="aspectFit"></image>
+      </view>
+      <view class="txt">
+        <view class="tit">意见上报</view>
+        <view class="desc">收集意见</view>
+        <view class="desc">更好体验</view>
+      </view>
+    </view>
+    <view class="item">
+      <view class="img">
+        <image src="../../images/i4.png" mode="aspectFit"></image>
+      </view>
+      <view class="txt">
+        <view class="tit">联系客服</view>
+        <view class="desc">直接表达</view>
+        <view class="desc">多联系</view>
+      </view>
+    </view>
+  </view>
+  <!-- 公司新闻 -->
+  <view class="news1">
+    <image src="../../images/pic-01.png" class="imgBg" mode="aspectFit"></image>
+    <view class="l">
+      <view class="tit">公司新闻</view>
+      <view class="desc">企业资讯最全最新</view>
+    </view>
+    <view class="c">
+      <image src="../../images/pic-02.png" mode="scaleToFill"></image>
+    </view>
+    <view class="g-more r">
+      <image src="../../images/jia_1.png" mode="aspectFit"></image>
+    </view>
+  </view>
+  <!-- 热门活动 -->
+  <view class="m-hot">
+    <view class="top">
+      <view class="tit">热门活动</view>
+      <view class="g-more">
+        <image src="../../images/jia_2.png" mode="aspectFit"></image>
+      </view>
+    </view>
+    <view class="ul-list3">
+      <view class="item">
+        <view class="pic">
+          <image src="../../images/pic-l1.png" mode="aspectFill"></image>
+        </view>
+        <view class="txt">
+          <view class="tit">活动标题一</view>
+          <view class="desc">海丝古港 微笑宁波 宁波文旅品牌亮相苏州国际旅游展</view>
+        </view>
+      </view>
+      <view class="item">
+        <view class="pic">
+          <image src="../../images/pic-l1.png" mode="aspectFill"></image>
+        </view>
+        <view class="txt">
+          <view class="tit">活动标题一</view>
+          <view class="desc">海丝古港 微笑宁波 宁波文旅品牌亮相苏州国际旅游展</view>
+        </view>
+      </view>
+      <view class="item">
+        <view class="pic">
+          <image src="../../images/pic-l1.png" mode="aspectFill"></image>
+        </view>
+        <view class="txt">
+          <view class="tit">活动标题一</view>
+          <view class="desc">海丝古港 微笑宁波 宁波文旅品牌亮相苏州国际旅游展</view>
+        </view>
+      </view>
+      <view class="item">
+        <view class="pic">
+          <image src="../../images/pic-l1.png" mode="aspectFill"></image>
+        </view>
+        <view class="txt">
+          <view class="tit">活动标题一</view>
+          <view class="desc">海丝古港 微笑宁波 宁波文旅品牌亮相苏州国际旅游展</view>
+        </view>
+      </view>
+    </view>
+  </view>
 </view>
-  
-  
-

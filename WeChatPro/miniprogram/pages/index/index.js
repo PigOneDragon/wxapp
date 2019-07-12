@@ -35,11 +35,6 @@ Page({
       duration: 1000,
       indicatorColor: '#fff',
       indicatorActiveColor: '#009b62',
-    changeIndicatorDots: function (e) {
-        this.setData({
-          indicatorDots: !this.data.indicatorDots
-        });
-      }
   },
 
   onLoad: function() {
