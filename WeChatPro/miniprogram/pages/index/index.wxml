@@ -1,0 +1,53 @@
+<view class="swiper">
+  <swiper indicator-dots="{{indicatorDots}}" 
+  autoplay="{{autoplay}}" 
+  interval="{{interval}}" 
+  duration="{{duration}}"
+  indicator-color="{{indicatorColor}}" 
+  indicator-active-color="{{indicatorActiveColor}}">
+    <block wx:for="{{imgList}}" wx:key="index">
+      <swiper-item>
+        <image src="{{item.url}}" class="img" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class="wp">
+  <!-- 车险投保 -->
+  <view class="ul-list">
+    <view class="con" wx:for="{{iconList}}" wx:key="item.id">
+      <image src="{{item.url}}" alt=""></image>
+      <view class="txt">{{item.txt}}</view>
+    </view>
+  </view>
+  <!-- 新闻公告 -->
+  <view class="m-news">
+    <view class="l">
+        <image src="../../images/news.png" mode="aspectFit"></image>
+        <!-- <text>新闻公告</text> -->
+        <text class="txt">新闻\n公告</text>
+    </view>
+    <view class="r">
+      <swiper class="news_s" vertical="true" display-multiple-items="2" autoplay="true" circular="true" interval="3000">
+        <block>
+          <swiper-item>
+              新闻1
+          </swiper-item>
+          <swiper-item>
+            新闻2
+          </swiper-item>
+           <swiper-item>
+             新闻3
+           </swiper-item>
+           <swiper-item>
+             新闻4
+           </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+    
+</view>
+  
+  
+

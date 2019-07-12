@@ -1,0 +1,80 @@
+page {
+  background-color: #eeeeee;
+}
+.swiper .img {
+  display: block;
+  width: 100%;
+  height: 345rpx;
+}
+.ul-list{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 40rpx 0;
+  margin-bottom: 18rpx;
+}
+.ul-list .con{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ul-list .con image {
+  display: block;
+  width: 60rpx;
+  height: 60rpx;
+  margin: 
+}
+.ul-list .con .txt{
+  font-size: 24rpx;
+  color: #000000;
+  line-height: 1.5;
+  margin-top: 28rpx;
+}
+.m-news{
+  overflow: hidden;
+  display: flex;
+  background-color: #009b62;
+  border-radius: 10px;
+  padding:35rpx 22rpx;
+}
+.m-news .l{
+  width: 130rpx;
+  margin-right: 22rpx;
+  
+}
+.m-news .l .txt{
+  overflow: hidden;
+  float: left;
+  font-size: 24rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 1.6;
+}
+.m-news image{
+  display: block;
+  float: left;
+  width: 50rpx;
+  height: 50rpx;
+  margin-top: 15rpx;
+  margin-right: 15rpx;
+}
+.m-news .r{
+  flex:1;
+  /* height: 80rpx; */
+}
+.m-news .news_s{
+  font-size: 26rpx;
+  color: #fff;
+  height: 80rpx;
+
+}
+.m-news swiper-item{
+  height: 40rpx;
+}
+
+

@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/bxq/bxq",
+    "pages/my/my"
+  ],
+  "window": {
+    "backgroundColor": "#ff0000",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/tabbar1-1.png",
+      "selectedIconPath": "images/tabbar1-2.png"
+    },
+      {
+        "pagePath": "pages/bxq/bxq",
+        "text": "保险圈",
+        "iconPath": "images/tabbar2-1.png",
+        "selectedIconPath": "images/tabbar2-2.png"
+    },
+    {
+      "pagePath": "pages/my/my",
+      "text": "我的",
+      "iconPath": "images/tabbar3-1.png",
+      "selectedIconPath": "images/tabbar3-2.png"
+    }]
+  },
+  "sitemapLocation": "sitemap.json"
+}
