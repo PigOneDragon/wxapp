@@ -1,2 +1,26 @@
-<!--pages/bxq/bxq.wxml-->
-<text>pages/bxq/bxq.wxml</text>
+<view class="ul-tabs_b">
+    <view class="item on">
+        <navigator >保险知识</navigator>
+    </view>
+    <view  class="item">
+        <navigator>销售技巧</navigator>
+    </view>
+    <view  class="item">
+        <navigator>客户服务</navigator>
+    </view>
+</view>
+<view class="wp">
+    <view class="m-list">
+        <view class="item">
+            <view class="tit">
+                <view class="pic">
+                    <image src="../../images/userhead.png" mode="aspectFit"></image>
+                </view>
+                <view class="info">
+                    <view class="name">吴迪</view>                  
+                    <view class="bom"><text class="top">置顶</text><text class="date">2019-01-01 10:47</text></view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

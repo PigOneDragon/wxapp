@@ -1,1 +1,77 @@
-/* pages/bxq/bxq.wxss */
+/**bxq.wxss**/
+.ul-tabs_b{
+    display: flex;
+    justify-content: space-around;
+}
+.ul-tabs_b .item navigator{
+    display: block;
+    width: 100%;
+    height: 70rpx;
+    font-size: 30rpx;
+    color: #333333;
+    position: relative;
+    line-height: 70rpx;
+    margin-bottom: 20rpx;
+}
+.ul-tabs_b .item navigator::after{
+    content: "";
+    display: none;
+    position: absolute;
+    right: 0;
+    left: 10%;
+    bottom: 0;
+    width: 80%;
+    height: 10rpx;
+    background-color: #009b62;
+    border-radius: 10rpx;
+} 
+.ul-tabs_b .on navigator{
+    color: #009b62;
+    font-weight: bold;
+}
+.ul-tabs_b .on navigator::after{
+    display: block;
+}
+.m-list .item{
+    overflow: hidden;
+    padding: 40rpx 25rpx;
+    border-radius: 8rpx;
+    background-color: #fff;
+}
+.m-list .item .pic{
+    float: left;
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 16rpx;
+}
+.m-list .item .pic image{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.m-list .item .info{
+    overflow: hidden;
+}
+.m-list .info .name{
+    font-size: 30rpx;
+    color: #333333;
+    font-weight: bold;
+}
+.m-list .info .top{
+    padding: 0 24rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+    border-radius: 40rpx;
+    background-color: #edf5f7;
+    color: #009b62;
+    font-size: 26rpx;
+    text-align: center;
+    margin-right: 16rpx;
+}
+.m-list .info .date{
+    font-size: 24rpx;
+    line-height: 40rpx;
+    color: #aaaaaa;
+}

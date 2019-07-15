@@ -17,9 +17,17 @@ button:focus{
 button::after{
   border: none;
 }
+/* 公用样式 */
 .wp{
   padding: 0 10px;
   width: 100%;
   box-sizing: border-box;
   /* background-color: #f6f6f6; */
+}
+page {
+  background-color: #eeeeee;
+}
+image{
+  width: auto;
+  height: auto;
 }
