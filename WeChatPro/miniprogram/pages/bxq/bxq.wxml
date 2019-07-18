@@ -1,24 +1,48 @@
 <view class="ul-tabs_b">
     <view class="item on">
-        <navigator >保险知识</navigator>
+        <navigator>保险知识</navigator>
     </view>
-    <view  class="item">
+    <view class="item">
         <navigator>销售技巧</navigator>
     </view>
-    <view  class="item">
+    <view class="item">
         <navigator>客户服务</navigator>
     </view>
 </view>
 <view class="wp">
     <view class="m-list">
-        <view class="item">
+        <view class="item" wx:for="{{imgTxtList}}">
             <view class="tit">
                 <view class="pic">
                     <image src="../../images/userhead.png" mode="aspectFit"></image>
                 </view>
                 <view class="info">
-                    <view class="name">吴迪</view>                  
-                    <view class="bom"><text class="top">置顶</text><text class="date">2019-01-01 10:47</text></view>
+                    <view class="name">吴迪</view>
+                    <view class="bom">
+                        <text class="top">置顶</text>
+                        <text class="date">2019-01-01 10:47</text>
+                    </view>
+                </view>
+            </view>
+            <view class="txt">{{item.desc}}</view>
+            <view class="pics">
+                <view class="pic" wx:for="{{item.imgUrls}}">
+                    <image src="{{item}}" mode="aspectFill"></image>
+                </view>
+            </view>
+            <view class="bot">
+                <view class="icon">
+                    <image src="../../images/yan.png" mode="aspectFit"></image>
+                    <text>{{item.view}}</text>
+                </view>
+                <view class="icon">
+                    <image src="../../images/ly.png" mode="aspectFit"></image>
+                    <text>{{item.ly}}</text>
+                </view>
+                <view class="icon" bindtap='handleClick' data-id="{{item.id}}">
+                    <image src="../../images/dz.png" mode="aspectFit" class="{{item.showView?'show':'hide'}}"></image>
+                    <image src="../../images/dz1.png" mode="aspectFit" class="{{item.showView?'hide':'show'}}"></image>
+                    <text  data-id="{{item.id}}">{{item.good}}</text>
                 </view>
             </view>
         </view>

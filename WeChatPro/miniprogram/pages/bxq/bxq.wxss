@@ -34,11 +34,12 @@
 }
 .m-list .item{
     overflow: hidden;
-    padding: 40rpx 25rpx;
+    padding: 40rpx 25rpx 45rpx;
+    margin-bottom: 20rpx;
     border-radius: 8rpx;
     background-color: #fff;
 }
-.m-list .item .pic{
+.m-list .item .tit .pic{
     float: left;
     width: 80rpx;
     height: 80rpx;
@@ -46,7 +47,7 @@
     overflow: hidden;
     margin-right: 16rpx;
 }
-.m-list .item .pic image{
+.m-list .item .tit .pic image{
     display: block;
     width: 100%;
     height: 100%;
@@ -75,3 +76,50 @@
     line-height: 40rpx;
     color: #aaaaaa;
 }
+.m-list .txt{
+    margin: 20rpx 0 10rpx;
+    font-size: 24rpx;
+    color: #666666;
+    line-height: 42rpx;
+}
+.m-list .pics{
+    overflow: hidden;
+}
+.m-list .pics .pic{
+    float: left;
+    width: 140rpx;
+    height: 140rpx;
+    margin-right: 20rpx;
+    overflow: hidden;
+}
+.m-list .pics .pic image{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.m-list .bot{
+    overflow: hidden;
+    margin-top: 20rpx;
+}
+.m-list .bot .icon{
+    float: left;
+}
+.m-list .bot .icon image{
+    float: left;
+    width: 30rpx;
+    height: 30rpx;
+    margin-top: 12rpx;
+    margin-right: 10rpx;
+}
+.m-list .bot .icon .show{
+    display: block;
+}
+.m-list .bot .icon .hide{
+    display: none;
+}
+.m-list .bot .icon text{
+    margin-right: 30rpx;
+    font-size: 12px;
+    color: #999999;
+}
+
