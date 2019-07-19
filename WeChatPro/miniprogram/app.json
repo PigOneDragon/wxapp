@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/bxq/bxq",
-    "pages/my/my"
+    "pages/my/my",
+    "pages/poster/poster"
   ],
   "window": {
     "backgroundColor": "#f5f5f5",
@@ -12,24 +13,26 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "首页",
-      "iconPath": "images/tabbar1-1.png",
-      "selectedIconPath": "images/tabbar1-2.png"
-    },
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/j-b01.png",
+        "selectedIconPath": "images/j-b01h.png"
+      },
       {
         "pagePath": "pages/bxq/bxq",
         "text": "保险圈",
-        "iconPath": "images/tabbar2-1.png",
-        "selectedIconPath": "images/tabbar2-2.png"
-    },
-    {
-      "pagePath": "pages/my/my",
-      "text": "我的",
-      "iconPath": "images/tabbar3-1.png",
-      "selectedIconPath": "images/tabbar3-2.png"
-    }]
+        "iconPath": "images/j-b02.png",
+        "selectedIconPath": "images/j-b02h.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/j-b03.png",
+        "selectedIconPath": "images/j-b03h.png"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json"
 }

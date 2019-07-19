@@ -10,7 +10,7 @@
 	},
 	"appid": "wxd0a92048a25d1cff",
 	"projectname": "WeChatPro",
-	"libVersion": "2.2.5",
+	"libVersion": "2.6.6",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
 	"compileType": "miniprogram",

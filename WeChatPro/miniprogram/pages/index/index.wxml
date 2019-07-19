@@ -1,5 +1,5 @@
 <view class="swiper">
-  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{indicatorActiveColor}}"  circular="true">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{indicatorActiveColor}}" circular="true">
     <block wx:for="{{imgList}}" wx:key="index">
       <swiper-item>
         <image src="{{item.url}}" class="img" mode="aspectFill" />
@@ -44,14 +44,16 @@
   <!-- iconList -->
   <view class="ul-list1">
     <view class="item border-right">
-      <view class="img">
-        <image src="../../images/i1.png" mode="aspectFit"></image>
-      </view>
-      <view class="txt">
-        <view class="tit">推广海报</view>
-        <view class="desc">邀请好友</view>
-        <view class="desc">享收益</view>
-      </view>
+      <navigator url="">
+        <view class="img">
+          <image src="../../images/i1.png" mode="aspectFit"></image>
+        </view>
+        <view class="txt">
+          <view class="tit">推广海报</view>
+          <view class="desc">邀请好友</view>
+          <view class="desc">享收益</view>
+        </view>
+      </navigator>
     </view>
     <view class="item">
       <view class="img">
@@ -59,7 +61,7 @@
       </view>
       <view class="txt">
         <view class="tit">学习专区</view>
-        <view class="desc">更多知识</view> 
+        <view class="desc">更多知识</view>
         <view class="desc">提能力</view>
       </view>
     </view>

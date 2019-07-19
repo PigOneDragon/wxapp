@@ -11,7 +11,7 @@
 </view>
 <view class="wp">
     <view class="m-list">
-        <view class="item" wx:for="{{imgTxtList}}">
+        <view class="item" wx:for="{{imgTxtList}}"  wx:key="key">
             <view class="tit">
                 <view class="pic">
                     <image src="../../images/userhead.png" mode="aspectFit"></image>
@@ -26,7 +26,7 @@
             </view>
             <view class="txt">{{item.desc}}</view>
             <view class="pics">
-                <view class="pic" wx:for="{{item.imgUrls}}">
+                <view class="pic" wx:for="{{item.imgUrls}}" wx:key="index">
                     <image src="{{item}}" mode="aspectFill"></image>
                 </view>
             </view>

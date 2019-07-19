@@ -18,15 +18,15 @@
         </view>
     </view>
     <view class="kpi">
-        <view class="item">
-            <view>完成保单</view>
+        <view class="item bl">
+            <view class="txt">完成保单</view>
             <view class="num">50</view>
         </view>
         <view class="item">
-            <view>累计收入</view>
+            <view class="txt">累计收入</view>
             <view class="num">
-                <navigator class="more">明细</navigator>
                 1231
+                <navigator class="more">明细</navigator>
             </view>
         </view>
     </view>
@@ -34,14 +34,45 @@
 <view class="detail">
     <view class="item">
         <navigator class="con">
-            <view class="l">
-                <view class="icon">
-                    <image src="../../images/w-1.png" mode="aspectFit"></image>
-                </view>
-                <view class="txt">个人信息</view>
+            <view class="icon">
+                <image src="../../images/w-1.png" mode="aspectFit"></image>
             </view>
             <view class="r">
-                <image src="../../images/w-y1.png" mode="aspectFill"></image>
+                <image src="../../images/w-y1.png" mode="aspectFill" class="arrow"></image>
+                <view class="txt">个人信息</view>
+            </view>
+        </navigator>
+    </view>
+    <view class="item">
+        <navigator class="con">
+            <view class="icon">
+                <image src="../../images/w-1.png" mode="aspectFit"></image>
+            </view>
+            <view class="r">
+                <image src="../../images/w-y1.png" mode="aspectFill" class="arrow"></image>
+                <view class="txt">个人信息</view>
+            </view>
+        </navigator>
+    </view>
+    <view class="item">
+        <navigator class="con">
+            <view class="icon">
+                <image src="../../images/w-1.png" mode="aspectFit"></image>
+            </view>
+            <view class="r">
+                <image src="../../images/w-y1.png" mode="aspectFill" class="arrow"></image>
+                <view class="txt">个人信息</view>
+            </view>
+        </navigator>
+    </view>
+    <view class="item">
+        <navigator class="con">
+            <view class="icon">
+                <image src="../../images/w-1.png" mode="aspectFit"></image>
+            </view>
+            <view class="r">
+                <image src="../../images/w-y1.png" mode="aspectFill" class="arrow"></image>
+                <view class="txt">个人信息</view>
             </view>
         </navigator>
     </view>

@@ -1,11 +1,11 @@
-// pages/my/my.js
+// miniprogram/pages/poster/poster.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
- 
+
   },
 
   /**
