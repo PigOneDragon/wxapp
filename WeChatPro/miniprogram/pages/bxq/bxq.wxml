@@ -42,7 +42,7 @@
                 <view class="icon" bindtap='handleClick' data-id="{{item.id}}">
                     <image src="../../images/dz.png" mode="aspectFit" class="{{item.showView?'show':'hide'}}"></image>
                     <image src="../../images/dz1.png" mode="aspectFit" class="{{item.showView?'hide':'show'}}"></image>
-                    <text  data-id="{{item.id}}">{{item.good}}</text>
+                    <text>{{item.good}}</text>
                 </view>
             </view>
         </view>

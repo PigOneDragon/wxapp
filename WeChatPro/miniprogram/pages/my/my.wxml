@@ -1,2 +1,48 @@
-<!--pages/my/my.wxml-->
-<text>pages/my/my.wxml</text>
+<view class="top">
+    <image src="../../images/w-t.png" class="top-bg"></image>
+    <view class="user">
+        <view class="user-img">
+            <image src="../../images/userhead1.png" mode="widthFix"></image>
+        </view>
+        <view class="info">
+            <view class="name">何慧峰</view>
+            <view class="txt">
+                加入时间：
+                <text>2019-01-01</text>
+            </view>
+            <view class="txt">
+                您是由
+                <text>王小二</text>
+                推荐加入的
+            </view>
+        </view>
+    </view>
+    <view class="kpi">
+        <view class="item">
+            <view>完成保单</view>
+            <view class="num">50</view>
+        </view>
+        <view class="item">
+            <view>累计收入</view>
+            <view class="num">
+                <navigator class="more">明细</navigator>
+                1231
+            </view>
+        </view>
+    </view>
+</view>
+<view class="detail">
+    <view class="item">
+        <navigator class="con">
+            <view class="l">
+                <view class="icon">
+                    <image src="../../images/w-1.png" mode="aspectFit"></image>
+                </view>
+                <view class="txt">个人信息</view>
+            </view>
+            <view class="r">
+                <image src="../../images/w-y1.png" mode="aspectFill"></image>
+            </view>
+        </navigator>
+    </view>
+</view>
