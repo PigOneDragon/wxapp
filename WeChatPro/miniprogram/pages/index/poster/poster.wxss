@@ -1,1 +1,62 @@
 /* miniprogram/pages/poster/poster.wxss */
+.m-top{
+    background-color: #ffffff;
+    padding:20rpx 0;
+}
+.choose{
+    font-size: 24rpx;
+    color: #aaaaaa;
+    line-height: 1.5;
+    margin-bottom: 20rpx;
+}
+.pic-list{
+    overflow: hidden;
+    padding-top: 12rpx;
+}
+.pic-list .pic{
+    float: left;
+    width: 100rpx;
+    height: 140rpx;
+    border:1px solid transparent;
+    /* overflow: hidden; */
+    margin-right: 28rpx;
+    position: relative;
+}
+.pic-list .pic image{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.pic-list .pic.act{
+    border-color: #009b62;
+}
+.pic-list .pic .icon{
+    display: none;
+    position: absolute;
+    width: 25rpx;
+    height: 25rpx;
+    top: -10rpx;
+    right: 0;
+} 
+.pic-list .pic.act .icon{
+    display: block;
+}
+.pic-big{
+    padding: 40rpx 0;
+}
+.pic-big image{
+    display: block;
+    width: 80%;
+    height: 842rpx;
+    margin: 0 auto;
+}
+.btn{
+    display: block;
+    margin:60rpx 10% 127rpx;
+    line-height: 90rpx;
+    border-radius: 90rpx;
+    background-color: #009b62;
+    color: #ffffff;
+    font-size: 30rpx;
+    text-align: center;
+}

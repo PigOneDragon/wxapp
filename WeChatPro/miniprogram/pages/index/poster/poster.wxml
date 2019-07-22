@@ -1,2 +1,16 @@
-<!--miniprogram/pages/poster/poster.wxml-->
-<text>miniprogram/pages/poster/poster.wxml</text>
+<!-- miniprogram/pages/poster/poster.wxml -->
+<view class="m-top">
+    <view class="wp">
+        <view class="choose">请选择推广海报模板</view>
+        <view class="pic-list">
+            <view class="pic  {{item.actView ? 'act':' '}}" bindtap="handleChoose" wx:for="{{imgList}}" wx:key="item.id" data-id="{{item.id}}">
+                <image src="{{item.imgUrl}}" mode="widthFix"></image>
+                <image src="../../../images/act-1.png" class="icon"></image>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="pic-big">
+    <image src="{{imgbUrl}}" mode="aspectFit"></image>
+</view>
+<button class="btn" bindtap="saveImgToLocal">保存推广海报</button>

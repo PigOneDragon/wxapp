@@ -5,6 +5,67 @@ Page({
    * 页面的初始数据
    */
   data: {
+    imgList: [{
+      id: '001',
+      imgUrl: '../../../images/hb-1.png',
+      actView: false
+
+    }, {
+      id: '002',
+      imgUrl: '../../../images/hb-2.png',
+      actView: false
+    }, {
+      id: '003',
+      imgUrl: '../../../images/hb-3.png',
+      actView: false
+    }, {
+      id: '004',
+      imgUrl: '../../../images/hb-4.png',
+      actView: false
+    }],
+    imgbUrl: '../../../images/hb-1b.png'
+  },
+  handleChoose: function (e) {
+    /*  this.actView = !(this.actView);
+     this.setData({
+       actView: this.actView 
+     }); */
+    var info_id = e.currentTarget.dataset.id; //返回触发事件的ID
+    for (var i = 0; i < this.data.imgList.length; i++) {
+      if (this.data.imgList[i].id == info_id) {
+        this.setData({
+          ["imgList[" + i + "].actView"]: true
+        });
+      } else {
+        this.setData({
+          ["imgList[" + i + "].actView"]: false
+        });
+      }
+    }
+  },
+  // 保存图片至本地
+
+  saveImgToLocal: function (e) {
+    let that = this;
+    let imgSrc = that.data.imgbUrl;
+    console.log(imgSrc);
+   wx.downloadFile({
+      url: imgSrc,
+      success: function (res) {
+        console.log(res);
+        //图片保存到本地
+       /*  wx.saveImageToPhotosAlbum({
+          filePath: res.tempFilePath,
+          success: function (data) {
+            wx.showToast({
+              title: '保存成功',
+              icon: 'success',
+              duration: 2000
+            })
+          },
+        }) */
+      }
+    }) 
 
   },
 
