@@ -44,7 +44,7 @@
   <!-- iconList -->
   <view class="ul-list1">
     <view class="item border-right">
-      <navigator url="">
+      <navigator  url="poster/poster"  hover-class="navigator-hover">
         <view class="img">
           <image src="../../images/i1.png" mode="aspectFit"></image>
         </view>
