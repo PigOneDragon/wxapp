@@ -15,7 +15,8 @@
 </view>
 <button class="submit" bindtap="showFrom">提交报价</button>
 <!-- 获取报价弹出层 -->
-<view id="pirce"  wx:if="{{show}}" bindtap="closeFrom">
+<view id="pirce"  wx:if="{{show}}" >
+    <view class="mask"  bindtap="closeFrom"></view>
     <view class="con">
         <form>
             <view class="tit">获取报价</view>

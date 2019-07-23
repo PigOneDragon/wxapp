@@ -67,14 +67,12 @@ Page({
     this.setData({
       index: e.detail.value
     });
-    event.stopPropagation();
   },
    bindPickerJdChange: function (e) {
      console.log('picker发送选择改变，携带值为', e.detail.value);
      this.setData({
        index1: e.detail.value
      });
-     event.stopPropagation();
    },
   //  点击显示弹窗
   showFrom: function () {

@@ -30,7 +30,7 @@
     background-color: #009b62;
     border-radius: 0;
 }
-#pirce{
+#pirce .mask{
     position: fixed;
     top: 0;
     right: 0;
