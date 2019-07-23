@@ -18,36 +18,36 @@
 <view id="pirce"  wx:if="{{show}}" >
     <view class="mask"  bindtap="closeFrom"></view>
     <view class="con">
-        <form>
+        <form  bindsubmit="formSubmit">
             <view class="tit">获取报价</view>
             <view class="group">
                 <view class="txt">车型</view>
                 <view class="in">
-                    <input type="text" placeholder="请输入车型" />
+                    <input type="text" placeholder="请输入车型" name="car" />
                 </view>
             </view>
             <view class="group">
                 <view class="txt">购车日期</view>
                 <view class="in">
-                    <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange" class="date">
-                        <view class="picker">{{date}}</view>
+                    <picker mode="date" value="{{date}}" start="2015-09-01" end="{{today}}" bindchange="bindDateChange" class="date"  name="date">
+                        <view class="picker"  >{{date}}</view>
                     </picker>
                 </view>
             </view>
             <view class="group">
                 <view class="txt">车牌号</view>
                 <view class="in">
-                    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" class="ds">
+                    <picker bindchange="bindPickerChange" value="{{array[index]}}" range="{{array}}" class="ds"  name="area">
                         <image class="drop" mode="aspectFit" src="../../../images/y-2.png"></image>
                         <view class="picker">{{array[index]}}</view>
                     </picker>
-                    <input type="text" class="inp" placeholder="请输入车牌号" />
+                    <input type="text" class="inp" placeholder="请输入车牌号" name="carNub" />
                 </view>
             </view>
             <view class="group">
                 <view class="txt">机动车损失险</view>
                 <view class="in">
-                    <picker bindchange="bindPickerJdChange" value="{{index1}}" range="{{array1}}">
+                    <picker bindchange="bindPickerJdChange" value="{{array1[index1]}}" range="{{array1}}"  name="pirce1">
                         <image class="drop" mode="aspectFit" src="../../../images/y-2.png"></image>
                         <view class="picker">{{array1[index1]}}</view>
                     </picker>
@@ -56,7 +56,7 @@
             <view class="group">
                 <view class="txt">机动车损失险</view>
                 <view class="in">
-                    <picker bindchange="bindPickerJdChange" value="{{index1}}" range="{{array1}}">
+                    <picker bindchange="bindPickerJdChange" value="{{array1[index1]}}" range="{{array1}}"  name="pirce2">
                         <image class="drop" mode="aspectFit" src="../../../images/y-2.png"></image>
                         <view class="picker">{{array1[index1]}}</view>
                     </picker>
@@ -65,7 +65,7 @@
             <view class="group">
                 <view class="txt">机动车损失险</view>
                 <view class="in">
-                    <picker bindchange="bindPickerJdChange" value="{{index1}}" range="{{array1}}">
+                    <picker bindchange="bindPickerJdChange" value="{{array1[index1]}}" range="{{array1}}"  name="pirce3">
                         <image class="drop" mode="aspectFit" src="../../../images/y-2.png"></image>
                         <view class="picker">{{array1[index1]}}</view>
                     </picker>
@@ -74,13 +74,13 @@
             <view class="group">
                 <view class="txt">姓名</view>
                 <view class="in">
-                    <input type="text" placeholder="请输入您的姓名" />
+                    <input type="text" placeholder="请输入您的姓名" name="username" />
                 </view>
             </view>
             <view class="group">
                 <view class="txt">联系方式</view>
                 <view class="in">
-                    <input type="number" placeholder="请输入您的联系电话" />
+                    <input type="number" placeholder="请输入您的联系电话"  name="usertel" />
                 </view>
             </view>
             <button  form-type="submit" class="btn">确认提交</button>

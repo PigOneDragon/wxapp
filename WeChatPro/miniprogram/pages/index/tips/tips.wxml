@@ -1,0 +1,108 @@
+<!-- miniprogram/pages/index/tips/tips.wxml -->
+<view class="ul-tabs_b">
+    <view class="item on">
+        <navigator>一周内到期</navigator>
+    </view>
+    <view class="item">
+        <navigator>一月内到期</navigator>
+    </view>
+    <view class="item">
+        <navigator>三月内到期</navigator>
+    </view>
+    <view class="item" bindtap="showDate">
+        <image src="../../../images/shuaix.png" mode="widthFix"></image>
+    </view>
+</view>
+<!-- 全选 -->
+<view class="wp">
+    <view class="m-tips">
+        <form>
+            <view class="top">
+                <!-- <radio-group name="radio-group"> -->
+                <label bindtap="seleceAll">
+                    <checkbox value="all" checked="{{checked}}" />
+                    <text>全选</text>
+                </label>
+                <!-- </radio-group> -->
+                <view class="txt">请选择需要通知的车险</view>
+            </view>
+            <!-- 投保信息 -->
+            <view class="con">
+                <view class="item" wx:for="{{infoList}}" wx:key="{{item.id}}" bindtap="selectSubChange" data-checked="{{item.checked}}" data-id="{{item.id}}">
+                    <label>
+                        <checkbox value="name1" checked="{{item.checked}}" />
+                        <view class="name">
+                            <view class="desc">
+                                <view class="txt">
+                                    投保人：
+                                    <text>{{item.name}}</text>
+                                </view>
+                                <view class="txt">
+                                    联系方式：
+                                    <text>{{item.tel}}</text>
+                                </view>
+                                <view class="txt">
+                                    车型：
+                                    <text>{{item.car}}</text>
+                                </view>
+                                <view class="txt">
+                                    车牌号：
+                                    <text>{{item.carNum}}</text>
+                                </view>
+                                <view class="txt">
+                                    投保时间：
+                                    <text>{{item.date}}</text>
+                                </view>
+                                <view class="txt">
+                                    保费：
+                                    <text>{{item.pirce}}</text>
+                                </view>
+                                <view class="txt txt1">
+                                    生效时间：
+                                    <text>{{item.time}}</text>
+                                </view>
+                            </view>
+                            <view class="bot">
+                                距离过保还有
+                                <text>{{item.day}}</text>
+                                天
+                            </view>
+                        </view>
+                    </label>
+                </view>
+            </view>
+            <button form-type="submit" class="btn">确认发送微信通知</button>
+        </form>
+    </view>
+</view>
+<!-- 弹窗 -->
+<view id="sizer" wx:if="{{show}}">
+    <view class="group">
+        <view class="txt">投保时间</view>
+        <view class="in">
+            <picker mode="date" value="{{date}}" bindchange="bindDateChange" class="date" name="date">
+                <image src="../../../images/rl.png" class="rl" mode="widthFix"></image>
+                <view class="picker">{{date}}</view>
+            </picker>
+        </view>
+    </view>
+    <view class="group">
+        <view class="txt">生效时间</view>
+        <view class="in">
+            <picker mode="date" value="{{date}}" bindchange="bindDateChange1" class="date" name="date">
+                <image src="../../../images/rl.png" class="rl" mode="widthFix"></image>
+                <view class="picker">{{date1}}</view>
+            </picker>
+        </view>
+    </view>
+    <view class="group">
+        <view class="txt">到期时间</view>
+        <view class="in">
+            <picker mode="date" value="{{date}}" bindchange="bindDateChange2" class="date" name="date">
+                <image src="../../../images/rl.png" class="rl" mode="widthFix"></image>
+                <view class="picker">{{date2}}</view>
+            </picker>
+        </view>
+    </view>
+   <button class="btn1">确认</button>
+</view>

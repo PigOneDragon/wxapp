@@ -23,7 +23,7 @@ Page({
       id: '003',
         url: '../../images/v3.png', 
         txt: '续保提醒',
-        src: 'toubao/toubao'
+        src: 'tips/tips'
       },
       {
       id: '004',

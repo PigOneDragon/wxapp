@@ -9,6 +9,7 @@ Page({
     show: false,
     // multiIndex: [0, 0, 0],
     date: '2018-08-08',
+    today: '',
     // 车牌的地市数组
     array: ['美国', '中国', '巴西', '日本'],
     objectArray: [{
@@ -76,6 +77,18 @@ Page({
    },
   //  点击显示弹窗
   showFrom: function () {
+    // 显示时页面返回顶部，利用微信提供的 onPageScroll函数判断滚动距离
+    if (wx.pageScrollTo) {
+      wx.pageScrollTo({
+        scrollTop: 0,
+        duration: 300
+      });
+    } else {
+      wx.showModal({
+        title: '提示',
+        content: '当前微信版本过低，无法使用该功能，请升级到最新微信版本后重试。'
+      });
+    }
     this.setData({
       show: true
     });
@@ -85,13 +98,35 @@ Page({
       show: false
     });
   },
+  // 提交按钮触发表单提交事件
+  // 必须有name属性，否则获取不到值
+  // 使用picker的值name属性需写在picker父容器上
+  formSubmit: function (e) {
+    console.log('form发生了submit事件，携带数据为：', e.detail.value);
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    // 页面加载时改变today的值
+    var timestamp = Date.parse(new Date());
+    var date = new Date(timestamp);
+    //获取年份  
+    var Y = date.getFullYear();
+    //获取月份  
+    var M = (date.getMonth() + 1 < 10 ? '0' + (date.getMonth() + 1) : date.getMonth() + 1);
+    //获取当日日期 
+    var D = date.getDate() < 10 ? '0' + date.getDate() : date.getDate();
+    const day = Y + "-" + M + "-" + D;
+    this.today = day;
+    this.setData({
+      today: day
+    });
   },
-
+  // 获取到当前滑动屏幕的距离
+/*   onPageScroll: function (res) {
+      console.log(res);
+  }, */
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

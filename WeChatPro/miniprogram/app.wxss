@@ -31,3 +31,46 @@ image{
   width: auto;
   height: auto;
 }
+/* 公用tab切换 */
+.ul-tabs_b {
+  display: flex;
+  justify-content: space-around;
+}
+
+.ul-tabs_b .item navigator {
+  display: block;
+  width: 100%;
+  height: 70rpx;
+  font-size: 30rpx;
+  color: #333333;
+  position: relative;
+  line-height: 70rpx;
+  margin-bottom: 20rpx;
+}
+
+.ul-tabs_b .item navigator::after {
+  content: "";
+  display: none;
+  position: absolute;
+  right: 0;
+  left: 10%;
+  bottom: 0;
+  width: 80%;
+  height: 10rpx;
+  background-color: #009b62;
+  border-radius: 10rpx;
+}
+
+.ul-tabs_b .on navigator {
+  color: #009b62;
+  font-weight: bold;
+}
+
+.ul-tabs_b .on navigator::after {
+  display: block;
+}
+.ul-tabs_b .item image{
+  display: block;
+  margin-top: 12rpx;
+  width: 40rpx;
+}

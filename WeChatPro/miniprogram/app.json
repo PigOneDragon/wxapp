@@ -5,7 +5,8 @@
     "pages/my/my",
     "pages/index/poster/poster",
     "pages/index/toubao/toubao",
-    "pages/information/information"
+    "pages/information/information",
+    "pages/index/tips/tips"
   ],
   "window": {
     "backgroundColor": "#f5f5f5",

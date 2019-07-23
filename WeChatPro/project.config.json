@@ -31,7 +31,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 4,
+			"current": 5,
 			"list": [
 				{
 					"id": -1,
@@ -64,6 +64,13 @@
 					"id": -1,
 					"name": "投保",
 					"pathName": "pages/index/toubao/toubao",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "续保提醒",
+					"pathName": "pages/index/tips/tips",
 					"scene": null
 				}
 			]
