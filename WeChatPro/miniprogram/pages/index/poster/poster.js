@@ -47,28 +47,39 @@ Page({
 
   saveImgToLocal: function (e) {
     let that = this;
-    let imgSrc = that.data.imgbUrl;
+    let imgSrc = 'images/hb-1b.png';
     console.log(imgSrc);
-   wx.downloadFile({
-      url: imgSrc,
+    wx.downloadFile({
+      // 临时路径？网络路径不行，未添加到域名管理中
+      url: 'http://tmp/wxd0a92048a25d1cff.o6zAJs6nJ2gf108nK9UN-7wLwXSs.ChBhTTar7Bp3a5c0aceaaedcfebbec7335eb851a489b.png',
       success: function (res) {
         console.log(res);
         //图片保存到本地
-       /*  wx.saveImageToPhotosAlbum({
-          filePath: res.tempFilePath,
-          success: function (data) {
-            wx.showToast({
-              title: '保存成功',
-              icon: 'success',
-              duration: 2000
-            })
-          },
-        }) */
+         wx.saveImageToPhotosAlbum({
+           filePath: res.tempFilePath,
+           success: function (data) {
+             wx.showToast({
+               title: '保存成功',
+               icon: 'success',
+               duration: 2000
+             })
+           },
+         })
       }
-    }) 
-
+    });
   },
-
+  chooseImg: function () {
+    wx.chooseImage({
+      count: 9,
+      sizeType: ['original', 'compressed'],
+      sourceType: ['album', 'camera'],
+      success(res) {
+        // tempFilePath可以作为img标签的src属性显示图片
+        const tempFilePaths = res.tempFilePaths;
+        console.log(tempFilePaths);
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

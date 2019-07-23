@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/bxq/bxq",
     "pages/my/my",
-    "pages/index/poster/poster"
+    "pages/index/poster/poster",
+    "pages/index/toubao/toubao"
   ],
   "window": {
     "backgroundColor": "#f5f5f5",

@@ -1,0 +1,88 @@
+<!-- miniprogram/pages/index/toubao/toubao.wxml -->
+<view class="wp">
+    <view class="m-desc">
+        <view class="tit">产品特点</view>
+        <view class="info">
+            <view class="txt">
+                车辆保险，即机动车辆保险，简称车险，也称作汽车保险。它是指对机动车辆由于自然灾害或意外事故所造成的人身伤亡或财产损失负赔偿责任的一种商业保险。汽车保险是财产保险的一种，在财产保险领域中，汽车保险属于一个相对年轻的险种，这是由于汽车保险是伴随着汽车的出现和普及而产生和发展的。同时，与现代机动车辆保险不同的是，在汽车保险的初期是以汽车的第三者责任险为主险的，并逐步扩展到车身的碰撞损失等风险。
+            </view>
+            <image src="../../../images/cl-1.png" mode="widthFix"></image>
+            <view class="txt">
+                车辆保险，即机动车辆保险，简称车险，也称作汽车保险。它是指对机动车辆由于自然灾害或意外事故所造成的人身伤亡或财产损失负赔偿责任的一种商业保险。汽车保险是财产保险的一种，在财产保险领域中，汽车保险属于一个相对年轻的险种，这是由于汽车保险是伴随着汽车的出现和普及而产生和发展的。同时，与现代机动车辆保险不同的是，在汽车保险的初期是以汽车的第三者责任险为主险的，并逐步扩展到车身的碰撞损失等风险。
+            </view>
+        </view>
+    </view>
+</view>
+<button class="submit" bindtap="showFrom">提交报价</button>
+<!-- 获取报价弹出层 -->
+<view id="pirce"  wx:if="{{show}}" bindtap="closeFrom">
+    <view class="con">
+        <form>
+            <view class="tit">获取报价</view>
+            <view class="group">
+                <view class="txt">车型</view>
+                <view class="in">
+                    <input type="text" placeholder="请输入车型" />
+                </view>
+            </view>
+            <view class="group">
+                <view class="txt">购车日期</view>
+                <view class="in">
+                    <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange" class="date">
+                        <view class="picker">{{date}}</view>
+                    </picker>
+                </view>
+            </view>
+            <view class="group">
+                <view class="txt">车牌号</view>
+                <view class="in">
+                    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" class="ds">
+                        <image class="drop" mode="aspectFit" src="../../../images/y-2.png"></image>
+                        <view class="picker">{{array[index]}}</view>
+                    </picker>
+                    <input type="text" class="inp" placeholder="请输入车牌号" />
+                </view>
+            </view>
+            <view class="group">
+                <view class="txt">机动车损失险</view>
+                <view class="in">
+                    <picker bindchange="bindPickerJdChange" value="{{index1}}" range="{{array1}}">
+                        <image class="drop" mode="aspectFit" src="../../../images/y-2.png"></image>
+                        <view class="picker">{{array1[index1]}}</view>
+                    </picker>
+                </view>
+            </view>
+            <view class="group">
+                <view class="txt">机动车损失险</view>
+                <view class="in">
+                    <picker bindchange="bindPickerJdChange" value="{{index1}}" range="{{array1}}">
+                        <image class="drop" mode="aspectFit" src="../../../images/y-2.png"></image>
+                        <view class="picker">{{array1[index1]}}</view>
+                    </picker>
+                </view>
+            </view>
+            <view class="group">
+                <view class="txt">机动车损失险</view>
+                <view class="in">
+                    <picker bindchange="bindPickerJdChange" value="{{index1}}" range="{{array1}}">
+                        <image class="drop" mode="aspectFit" src="../../../images/y-2.png"></image>
+                        <view class="picker">{{array1[index1]}}</view>
+                    </picker>
+                </view>
+            </view>
+            <view class="group">
+                <view class="txt">姓名</view>
+                <view class="in">
+                    <input type="text" placeholder="请输入您的姓名" />
+                </view>
+            </view>
+            <view class="group">
+                <view class="txt">联系方式</view>
+                <view class="in">
+                    <input type="number" placeholder="请输入您的联系电话" />
+                </view>
+            </view>
+            <button  form-type="submit" class="btn">确认提交</button>
+        </form>
+    </view>
+</view>
