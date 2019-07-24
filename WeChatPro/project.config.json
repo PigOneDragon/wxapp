@@ -31,7 +31,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 5,
+			"current": 6,
 			"list": [
 				{
 					"id": -1,
@@ -71,6 +71,13 @@
 					"id": -1,
 					"name": "续保提醒",
 					"pathName": "pages/index/tips/tips",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "hots",
+					"pathName": "pages/index/hots/hots",
 					"scene": null
 				}
 			]

@@ -17,7 +17,7 @@ Page({
       id: '002',
         url: '../../images/v2.png',
         txt: '热销产品',
-        src: 'toubao/toubao'
+        src: 'hots/hots'
       },
       {
       id: '003',
