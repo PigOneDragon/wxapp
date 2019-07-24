@@ -1,9 +1,37 @@
 <!-- pages/index/wangdian/wangdian.wxml -->
 <view class="top">
     <view class="choose">
-        <image src="../../../images/all-1.png"></image>
+        <image src="../../../images/all.png"></image>
     </view>
     <view class="map">
         <image src="../../../images/map.png"></image>
+    </view>
+</view>
+<view class="wp">
+    <view class="m-shop">
+        <view class="item">
+            <view class="pic">
+                <image src="../../../images/local-2.jpg"></image>
+            </view>
+            <view class="txt">
+                <view class="tit">全民保堇山中路店</view>
+                <view class="go">
+                    <!-- 点击打开地图 -->
+                    <view class="l" bindtap="getCenterLocation">
+                        <image src="../../../images/dw1.png" mode="widthFix"></image>
+                        <text>堇山中路56号</text>
+                    </view>
+                    <!-- 点击导航到该地 -->
+                    <view class="r">
+                        <image src="../../../images/dh.png" mode="widthFix"></image>
+                        <text class="t1">导航</text>
+                    </view>
+                </view>
+                <view class="tel">
+                    <image src="../../../images/tel.png" mode="widthFix"></image>
+                    <text>0574-87653332</text>
+                </view>
+            </view>
+        </view>
     </view>
 </view>
