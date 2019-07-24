@@ -10,7 +10,7 @@
 <view class="wp">
   <!-- 车险投保 -->
   <view class="ul-list">
-    <view class="con" wx:for="{{iconList}}" wx:key="item.id">
+    <view class="con" wx:for="{{iconList}}" wx:key="item.id" bindtap="navToPage" data-src="{{item.src}}">
       <image src="{{item.url}}" alt=""></image>
       <view class="txt">{{item.txt}}</view>
     </view>

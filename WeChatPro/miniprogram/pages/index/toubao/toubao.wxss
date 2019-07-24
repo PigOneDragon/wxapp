@@ -1,0 +1,119 @@
+/* miniprogram/pages/index/toubao/toubao.wxss */
+.m-desc{
+    background-color: #fff;
+    margin: 22rpx 0 90rpx;
+}
+.m-desc .tit{
+    font-size: 30rpx;
+    color: #009b62;
+    line-height: 100rpx;
+    padding-left: 26rpx;
+    border-bottom: 1px solid #f5f5f5;
+}
+.m-desc .info{
+    padding:38rpx 28rpx;
+    font-size: 28rpx;
+    color: #999999;
+    line-height: 48rpx;
+}
+.m-desc .info image{
+    display: block;
+    margin:30rpx auto;
+}
+.submit{
+    display: block;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+    color: #ffffff;
+    font-size: 30rpx;
+    background-color: #009b62;
+    border-radius: 0;
+}
+#pirce .mask{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(98,98,98,.6);
+}
+#pirce .con{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    padding: 60rpx 30rpx 40rpx;
+}
+#pirce .tit{
+    font-size: 30rpx;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 30rpx;
+}
+#pirce .group{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 25rpx;
+}
+#pirce .txt{
+    text-align: left;
+    font-size: 24rpx;
+    color: #000000;
+    line-height: 80rpx;
+    width: 170rpx;
+}
+#pirce .in{
+    flex-grow: 1;
+    height: 80rpx;
+    line-height: 80rpx;
+    border-radius: 80rpx;
+    overflow: hidden;
+    padding: 0 20rpx;
+    background-color: #f6f6f6;
+}
+#pirce .in input{
+    font-size: 24rpx;
+    color: #aaaaaa;
+    display: block;
+    height: 100%;
+}
+#pirce .date{
+     font-size: 24rpx;
+     color: #333333;
+}
+#pirce picker{
+   line-height: 80rpx;
+   font-size: 24rpx;
+   color: #aaaaaa;
+}
+#pirce .ds{
+    display: inline-block;
+    width: 70rpx;
+    line-height: 80rpx;
+    font-size: 24rpx;
+    color: #333333;
+    overflow: hidden;
+}
+
+#pirce .drop{
+    width: 20rpx;
+    height: 80rpx;
+    float: right;
+}
+#pirce .in .inp{
+    display: inline-block;
+    width: auto;
+    margin-left: 16rpx;
+}
+#pirce .btn{
+    display: block;
+    background-color: #009b62;
+    line-height: 100rpx;
+    text-align: center;
+    font-size: 30rpx;
+    color: #fff;
+}

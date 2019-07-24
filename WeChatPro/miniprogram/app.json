@@ -4,7 +4,10 @@
     "pages/bxq/bxq",
     "pages/my/my",
     "pages/index/poster/poster",
-    "pages/information/information"
+    "pages/index/toubao/toubao",
+    "pages/information/information",
+    "pages/index/tips/tips",
+    "pages/index/hots/hots"
   ],
   "window": {
     "backgroundColor": "#f5f5f5",

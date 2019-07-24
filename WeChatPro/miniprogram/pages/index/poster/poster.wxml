@@ -14,3 +14,4 @@
     <image src="{{imgbUrl}}" mode="aspectFit"></image>
 </view>
 <button class="btn" bindtap="saveImgToLocal">保存推广海报</button>
+<button class="btn" bindtap="chooseImg">选择图片</button>

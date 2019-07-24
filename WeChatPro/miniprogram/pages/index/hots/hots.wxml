@@ -1,0 +1,40 @@
+<!-- pages/index/hots/hots.wxml -->
+<view class="ul-tabs_b">
+    <view class="item on">
+        <navigator>汽车保险</navigator>
+    </view>
+    <view class="item">
+        <navigator>意外保险</navigator>
+    </view>
+    <view class="item">
+        <navigator>家庭保障</navigator>
+    </view>
+</view>
+<view class="wp">
+    <view class="m-pro">
+        <view class="item">
+            <image src="../../../images/hot-1.jpg" mode="widthFix"></image>
+            <view class="txt">
+                <view class="tit">中国人寿保险车险</view>
+                <view class="desc">
+                    活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介
+                </view>
+                <view class="bot">
+                    <navigator class="more">查看详情</navigator>
+                </view>
+            </view>
+        </view>
+        <view class="item">
+            <image src="../../../images/hot-1.jpg" mode="widthFix"></image>
+            <view class="txt">
+                <view class="tit">中国人寿保险车险</view>
+                <view class="desc">
+                    活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介
+                </view>
+                <view class="bot">
+                    <navigator class="more">查看详情</navigator>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

@@ -10,22 +10,26 @@ Page({
     iconList: [{
       id: '001',
         url: '../../images/v1.png',
-        txt: '车险投保'
+        txt: '车险投保',
+        src: 'toubao/toubao'
       },
       {
       id: '002',
         url: '../../images/v2.png',
-        txt: '热销产品'
+        txt: '热销产品',
+        src: 'hots/hots'
       },
       {
       id: '003',
         url: '../../images/v3.png', 
-        txt: '续保提醒'
+        txt: '续保提醒',
+        src: 'tips/tips'
       },
       {
       id: '004',
         url: '../../images/v4.png',
-        txt: '特约网点'
+        txt: '特约网点',
+        src: 'toubao/toubao'
       }
     ],
     // 轮播组件设置
@@ -36,7 +40,14 @@ Page({
       indicatorColor: '#fff',
       indicatorActiveColor: '#009b62',
   },
-
+// 跳转事件绑定
+navToPage: function (e) {
+  var info_src = e.currentTarget.dataset.src; //返回触发事件的ID
+  // 调用微信的方法
+  wx.navigateTo({
+    url: info_src
+  });
+},
   onLoad: function() {
     if (!wx.cloud) {
       wx.redirectTo({
