@@ -7,7 +7,8 @@
     "pages/index/toubao/toubao",
     "pages/information/information",
     "pages/index/tips/tips",
-    "pages/index/hots/hots"
+    "pages/index/hots/hots",
+    "pages/index/wangdian/wangdian"
   ],
   "window": {
     "backgroundColor": "#f5f5f5",

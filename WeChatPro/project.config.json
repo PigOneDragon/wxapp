@@ -31,7 +31,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 6,
+			"current": 7,
 			"list": [
 				{
 					"id": -1,
@@ -78,6 +78,13 @@
 					"id": -1,
 					"name": "hots",
 					"pathName": "pages/index/hots/hots",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "wangdian",
+					"pathName": "pages/index/wangdian/wangdian",
 					"scene": null
 				}
 			]

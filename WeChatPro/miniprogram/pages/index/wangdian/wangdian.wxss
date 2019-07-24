@@ -1,0 +1,7 @@
+/* pages/index/wangdian/wangdian.wxss */
+.top{
+    overflow: hidden;
+    background-color: #009b62;
+    height: 100rpx;
+    text-align: right;
+}
