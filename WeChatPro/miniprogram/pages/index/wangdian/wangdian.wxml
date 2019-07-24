@@ -1,0 +1,9 @@
+<!-- pages/index/wangdian/wangdian.wxml -->
+<view class="top">
+    <view class="choose">
+        <image src="../../../images/all-1.png"></image>
+    </view>
+    <view class="map">
+        <image src="../../../images/map.png"></image>
+    </view>
+</view>

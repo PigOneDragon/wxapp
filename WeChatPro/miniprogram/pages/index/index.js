@@ -29,7 +29,7 @@ Page({
       id: '004',
         url: '../../images/v4.png',
         txt: '特约网点',
-        src: 'toubao/toubao'
+        src: 'wangdian/wangdian'
       }
     ],
     // 轮播组件设置
