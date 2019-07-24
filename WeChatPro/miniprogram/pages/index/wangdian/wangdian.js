@@ -5,14 +5,44 @@ Page({
    * 页面的初始数据
    */
   data: {
+    lat: '',
+    lon: ''
+  },
 
+
+  // 获取经纬度，需先在app.json中添加permission 属性配置调用用户授权信息
+  getCenterLocation: function () {
+    /* wx.getLocation({
+      success: function (res) {
+        console.log(res.longitude);
+        console.log(res.latitude);
+        this.setData({
+          lat: res.latitude,
+          lon: res.longitude
+        });
+      }
+    }); */
+    // 跳转事件绑定
+    wx.navigateTo({
+      url: 'map/map?lat=' + this.data.lat + '&lon=' + this.data.lon
+    });
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    /* var that = this;
+    wx.getLocation({
+      success: function (res) {
+        console.log(res.longitude);
+        console.log(res.latitude);
+        that.setData({
+          lat: res.latitude,
+          lon: res.longitude
+        });
+      }
+    }); */
   },
 
   /**

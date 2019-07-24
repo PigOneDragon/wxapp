@@ -1,0 +1,15 @@
+<!--miniprogram/pages/index/wangdian/map/map.wxml-->
+<map 
+    id="myMap" 
+    longitude="{{lonShop}}" 
+    latitude="{{latShop}}" 
+    markers="{{markers}}"
+    data-markers="{{markers}}"
+    scale="16" 
+    controls="{{controls}}" 
+    show-location 
+    subkey="7VNBZ-DUV6V-EESPA-UN77O-3HXH2-XTF27"
+    style="width: 100%; height: 100vh;"
+    bindcontroltap="controltap" 
+    bindmarkertap="goToHere"
+    ></map>

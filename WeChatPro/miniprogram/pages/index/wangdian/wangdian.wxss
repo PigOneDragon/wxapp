@@ -3,5 +3,79 @@
     overflow: hidden;
     background-color: #009b62;
     height: 100rpx;
+    line-height: 100rpx;
     text-align: right;
+    padding-right: 28rpx;
 }
+.top .choose,
+.top .map{
+    display: inline-block;
+    vertical-align: middle;
+    width: 65rpx;
+    height: 65rpx;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 10rpx;
+}
+.top image{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.m-shop{
+    margin-top: 20rpx;
+}
+.m-shop .item{
+    overflow: hidden;
+    border-radius: 10rpx;
+    background-color: #fff;
+    padding: 20rpx;
+    margin-bottom: 20rpx;
+}
+.m-shop .pic{
+    float: left;
+    width: 180rpx;
+    height: 180rpx;
+    margin-right: 30rpx;
+    overflow: hidden;
+    border-radius: 10rpx;
+}
+.m-shop .pic image{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.m-shop .txt{
+    overflow: hidden;
+}
+.m-shop .txt .tit{
+    font-size: 30rpx;
+    color: #333333;
+    font-weight: bold;
+    margin-bottom: 25rpx;
+}
+.m-shop .txt text{
+    font-size: 24rpx;
+    color: #999999;
+}
+.m-shop .txt .go{
+    overflow: hidden;
+}
+.m-shop .txt .go .l,
+.m-shop .txt .go .r{
+    float: left;
+}
+.m-shop .txt .go .l text{
+    padding-right: 20rpx;
+    margin-right: 20rpx;
+    border-right: 2rpx solid #dcdcdc;
+}
+.m-shop .txt .go .r text{
+    color: #6e6e6e;
+}
+.m-shop .txt  image{
+    display: inline-block;
+    width: 25rpx;
+    margin-right: 15rpx;
+}
+
