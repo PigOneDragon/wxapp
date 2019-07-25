@@ -4,7 +4,7 @@ const app = getApp()
 Page({
   data: {
     imgList:[
-      { url: '../../images/ban-1.png' },
+      {url: '../../images/ban-1.png' },
       {url: '../../images/ban-2.png'}
     ],
     iconList: [{

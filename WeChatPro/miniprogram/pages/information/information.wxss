@@ -1,75 +1,94 @@
 /* miniprogram/pages/information/information.wxss */
-page{
-    background: #fff;
+
+.item:first-child {
+  height: 140rpx;
 }
-.item:first-child{
-    height: 140rpx;
+.item {
+  width: 100%;
+  height: 119rpx;
+  line-height: 119rpx;
+  border-bottom: #f5f5f5 1px solid;
+  padding: 0 32rpx 0 30rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
 }
-.item{
-    width: 100%;
-    height: 119rpx;
-    line-height: 119rpx;
-    border-bottom: #f5f5f5 1px solid;
-    padding: 0 32rpx 0 30rpx;
-    box-sizing: border-box;
-    display: flex;
-    justify-content:space-between;
+
+.item .name {
+  font-size: 30rpx;
+  color: #3f3f3f;
 }
-.item .name{
-    font-size: 30rpx;
-    color: #3f3f3f;
+
+.item .img {
+  width: 106rpx;
+  height: 106rpx;
+  float: right;
+  padding: 17rpx 0;
 }
-.item .img{
-    width: 106rpx;
-    height: 106rpx;
-    float: right;
-    padding: 17rpx 0;
+
+.img image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
 }
-.img image{
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
+
+.item .info {
+  color: #929292;
+  font-size: 30rpx;
+  flex: 1;
+  text-align: right;
 }
-.item .info{
-    color: #929292;
-    font-size: 30rpx;
-    flex: 1;
-    text-align: right;
+
+.item .info input {
+  width: 100%;
+  height: 100%;
+  line-height: 100%;
+  display: inline-block;
 }
-.item .info input{
-    width: 100%;
-    height: 100%;
-    line-height: 100%;
-    display: inline-block;
+
+.item .info label:first-child {
+  margin-right: 0;
 }
-.item .info radio{
-    width: 20rpx;
-    height: 20rpx;
-    border: #000 1px solid;
-    border-radius: 50%;
+
+.item .info label {
+  font-size: 30rpx;
+  height: 100%;
+  color: #929292;
+  margin-right: 40rpx;
+  display: block;
+  float: right;
 }
-/*  重写 radio 样式  */
-/* 未选中的 背景样式 */
-radio .wx-radio-input{
-   border-radius: 50%;/* 圆角 */
-   width: 40rpx;
-   height: 40rpx;
-   padding: 5rpx;
+
+.item .info label radio {
+  width: 20rpx;
+  border-radius: 50%;
+  margin-right: 22rpx;
+  font-size: 0;
+  float: left;
+  display: block;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3FpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQyIDc5LjE2MDkyNCwgMjAxNy8wNy8xMy0wMTowNjozOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo2ZTM4MmZmOS0yYTc4LWY4NDUtOTFlZC0xYzhkYTg2ZDI5NTYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6M0M4RjhBQTdBRTdCMTFFOTg5MjQ4MTlGN0Y3QTkzMkMiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6M0M4RjhBQTZBRTdCMTFFOTg5MjQ4MTlGN0Y3QTkzMkMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOmU4MDhlYjM4LTc5NDYtMTc0Yi1hYTk5LTI5MmYzYzBjZjU0MiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo2ZTM4MmZmOS0yYTc4LWY4NDUtOTFlZC0xYzhkYTg2ZDI5NTYiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6eewD8AAABLklEQVR42pSU245EUBBFKaQZI/Hg8v+/hweJiXuYRSXGdEg7+0H6xF7VJ1Vb2eu6Widx/NnVdd08z7Ztu67r+/73Lo5ns32GYcqyfL1e+IIgAOMtJfq+59UwDEmSRFF0AYON4xjHcRiG1pXatq3r2vO8NE3/wZD8oLCIWPdalqWqKi6v/GZtmmaapo/k5hbBhhlkO/KHRVFw24/kwWMGARRqfO2yHkv9gEIb6a1lKBBAYQyM0RQGARTGyDxNYRBAoe9vIXsu0RqmmN5XCCO5M4W1U6J9M4V1RkLQ213PSfUDbg3LsozEk9snJDbMIIBbJKnBt0Lin8DYMOuH+Tcn4koPye1dVPWTdBwnz/OLZUBcKax7g6eG51gGPG+XwbGGKKFWnf+xhsDe1tCvAAMAf+rhGUzRcWMAAAAASUVORK5CYII=) left center no-repeat;
+  background-size: 100%;
 }
-/* 选中后的 背景样式 （红色背景 无边框 可根据UI需求自己修改） */
-radio .wx-radio-input.wx-radio-input-checked{
-   background: #C00;
+
+.item .info label radio[checked] {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQyIDc5LjE2MDkyNCwgMjAxNy8wNy8xMy0wMTowNjozOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo0NjU4OTc3M0FERjAxMUU5QUVFQ0JBRUREMDU5MkREQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo0NjU4OTc3NEFERjAxMUU5QUVFQ0JBRUREMDU5MkREQyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjQ2NTg5NzcxQURGMDExRTlBRUVDQkFFREQwNTkyRERDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjQ2NTg5NzcyQURGMDExRTlBRUVDQkFFREQwNTkyRERDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+IQUAOAAAAqBJREFUeNpiZJidxIAFsAFxABRbArEUEP8C4idAfB6I1wPxRpDY/5S5KBpZsBgWCMRdYUqmKgHyhgyWYsoMUtwCDL/+/mV78vWdxvm3jzTWPzgXufr+mTtAdeVAvA5ZMyOSC5mBuC1QwagsU9ORwVVaiwEf2PP0GsP06/sZ1j041wXkVgFd+hfdhW05Wk5lbabBDLysHAyEgAvQQnMxJQYpLoGyKdf2MUBdCwQgF85OCgnZM+3/p1/f/5MKQHpAekFmALlgL4Mi4O5erxIZJylNFFdsfnSRof/yLobTb+6D+aYiigxFum4MPnL6KOr2PbvO4Lyt5ymQqcTM4GcYEa1ikVCs646iqObMeoaso4sZHnx5w/Dr318wBrGX3z3J8OffPwZkyxV5RRnufnrNd+ndk1tMoKQBik1ksAXostYLW3CGH0gO5HpkADUjAGSgqamoIopkH9CbhEA/mhoTUQUwBTJQQoKTH0XyzJsHBA1EVyPJBTZDEmTgr1///jCQCv4DITYAMvD5828fUZ0vokDQQFCMIwOoGc9BBl669O4ximQhMGkQAuhqzrwGB8EZkIEbNjw8jyLpC0xn1QY+OA0DyfmipUWoGRvgCXufd6mMo6QGiqJNDy8wTLiym+HUa0jCNgOmBpDL0A3b//wGg9PWblDCVoZlvdBQYPb5/OsHyVkPpCcUkvVCQVkPlFNAlly79uEZ9+ff363dZXQYmBgZiYrpf0ADSk6uZFhw+2g3sLSZiF7aVAJLDc7n3z/mgIovZ7R8jQ5A+Xf69QMMa+6fmQrSi608hIFgIO4A5m+VQHkjBmMReQZpbkGwxNOv7xnOvnnIsP7hOYald06ACthKoMvW4Cpg0auAUGjpbQzE0lBxUMCfhVYBq7FVAQABBgBKLGy9+6WaBwAAAABJRU5ErkJggg==) left center no-repeat;
+  background-size: 100%;
 }
-/* 选中后的 对勾样式 （白色对勾 可根据UI需求自己修改） */
-radio .wx-radio-input.wx-radio-input-checked::before{
-   border-radius: 50%;/* 圆角 */
-   width: 40rpx; /* 选中后对勾大小，不要超过背景的尺寸 */
-   height: 40rpx; /* 选中后对勾大小，不要超过背景的尺寸 */
-   line-height: 40rpx;
-   text-align: center;
-   font-size:30rpx; /* 对勾大小 30rpx */
-   color:#00F; /* 对勾颜色 白色 */
-   background: transparent;
-   transform:translate(-50%, -50%) scale(1);
-   -webkit-transform:translate(-50%, -50%) scale(1);
+
+/* 默认的样式隐藏 */
+
+.wx-radio-input {
+  display: none;
+}
+
+.btn-1 {
+  margin: 52rpx 25rpx 162rpx;
+}
+
+.btn-1 button {
+  background: #009b62;
+  text-align: center;
+  height: 104rpx;
+  color: #fff;
 }

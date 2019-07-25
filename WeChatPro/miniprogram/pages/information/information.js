@@ -5,16 +5,51 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+   
+      haad: '../../images/pic-1.png',
+      user: 'admin',
+      name: '王**',
+      sex: '男',
+      date: '2018-08-08'
+ 
   },
-
+  bindDateChange: function (e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value);
+    this.setData({
+      date: e.detail.value
+    });
+  },
+  bindPickerChange: function (e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value);
+    this.setData({
+      index: e.detail.value
+    });
+  },
+  bindPickerJdChange: function (e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value);
+    this.setData({
+      index1: e.detail.value
+    });
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    // 页面加载时改变today的值
+    var timestamp = Date.parse(new Date());
+    var date = new Date(timestamp);
+    //获取年份  
+    var Y = date.getFullYear();
+    //获取月份  
+    var M = (date.getMonth() + 1 < 10 ? '0' + (date.getMonth() + 1) : date.getMonth() + 1);
+    //获取当日日期 
+    var D = date.getDate() < 10 ? '0' + date.getDate() : date.getDate();
+    const day = Y + "-" + M + "-" + D;
+    this.today = day;
+    this.setData({
+      today: day
+    });
   },
-
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
