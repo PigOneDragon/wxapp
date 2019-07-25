@@ -56,7 +56,7 @@ Page({
   controltap: function () {
     var that = this;
     wx.getLocation({
-      type: 'wgs84',
+      type: 'gcj02',
       success: function (res) {
         that.setData({
           lat: res.latitude,
