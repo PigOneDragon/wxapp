@@ -31,7 +31,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 9,
+			"current": 8,
 			"list": [
 				{
 					"id": -1,
@@ -89,9 +89,9 @@
 					"scene": null
 				},
 				{
-					"id": -1,
+					"id": 8,
 					"name": "个人信息",
-					"pathName": "pages/information/information",
+					"pathName": "pages/my/information/information",
 					"query": "",
 					"scene": null
 				},
