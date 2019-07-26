@@ -1,0 +1,18 @@
+<!--miniprogram/pages/leijishouyi/leijishouyi.wxml-->
+<view class='m-top'>
+  <text class='txt-1'>当前收益</text>
+  <text class='txt-2'>300</text>
+</view>
+<view class='m-txtlist'>
+  <view class='tit'>
+    <image src='../../images/line-1.png'></image>
+    收益明细
+  </view>
+  <view class='item'  wx:for="{{txtlist}}" wx:key="*this">
+    <view class='left'>
+      <text class='txt-3'>{{item.name}}</text>
+      <text class='data'> {{time}}</text>
+    </view>
+    <view class='right'>+{{item.num}}</view>
+  </view>
+</view>

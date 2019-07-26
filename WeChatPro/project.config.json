@@ -31,7 +31,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 8,
+			"current": 9,
 			"list": [
 				{
 					"id": -1,
@@ -92,6 +92,14 @@
 					"id": -1,
 					"name": "个人信息",
 					"pathName": "pages/information/information",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 9,
+					"name": "累计收益",
+					"pathName": "pages/leijishouyi/leijishouyi",
+					"query": "",
 					"scene": null
 				}
 			]
