@@ -6,7 +6,7 @@ Page({
    */
   data: {
    
-      haad: '../../images/pic-1.png',
+      haad: '../../../images/pic-1.png',
       user: 'admin',
       name: '王**',
       sex: '男',
