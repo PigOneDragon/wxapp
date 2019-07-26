@@ -76,7 +76,7 @@ Page({
   goToHere: function (res) {
     let markers = res.currentTarget.dataset.markers; //将数据绑定在data上，点击获取元素的标注对象信息,返回一个数组，若有多个标注还要绑定ID，根据ID循环匹配点击为哪个标注
     // res.markerId; // 获取点击的markers的id，这个不需要绑定data
-    console.log(markers[0]);
+    // console.log(markers[0]);
     let lat = markers[0].latitude;
     let lon = markers[0].longitude;
     wx.openLocation({ //​使用微信内置地图查看位置。
@@ -90,12 +90,13 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({
+    // 接收url链接传递的参数
+   /*  this.setData({
       lat: options.lat,
       lon: options.lon
     });
     console.log(this.data.lat);
-    console.log(this.data.lon);
+    console.log(this.data.lon); */
     /*  wx.openLocation({
        latitude: this.data.latShop,
        longitude: this.data.lonShop,
