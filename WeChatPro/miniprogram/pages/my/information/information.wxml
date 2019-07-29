@@ -1,67 +1,71 @@
-<!--miniprogram/pages/information/information.wxml-->
+<!-- miniprogram/pages/information/information.wxml -->
 <view class='m-infoList'>
-  <view class='item'>
-    <text class='name'>头像</text>
-    <view class='img'>
-      <image src='{{"../" + userInfo.userHead}}' mode="aspectFill"></image>
+  <form  bindsubmit="changeValue">
+    <view class='item'>
+      <text class='name'>头像</text>
+      <view class='img'>
+        <image src='{{head}}' mode="aspectFill"></image>
+      </view>
     </view>
-  </view>
-  <view class='item'>
-    <text class='name'>呢称</text>
-    <view class='info'>
-      <input type="text" placeholder="{{userInfo.nickName}}" />
+    <view class='item'>
+      <text class='name'>呢称</text>
+      <view class='info'>
+        <input type="text" value="{{user}}" name="nickname" />
+      </view>
     </view>
-  </view>
-  <view class='item'>
-    <text class='name'>真实姓名</text>
-    <view class='info'>
-      <input type="text" placeholder="{{userInfo.name}}"  bindinput="changeValue" />
+    <view class='item'>
+      <text class='name'>真实姓名</text>
+      <view class='info'>
+        <input type="text" value="{{name}}" name="name" />
+      </view>
     </view>
-  </view>
-  <view class='item'>
-    <text class='name'>性别</text>
-    <radio-group class='info'>
-      <label>
-        <radio value="女" checked="{{userInfo.sex === '女'}}"></radio>女</label>
-      <label>
-        <radio value="男" checked="{{userInfo.sex === '男'}}"></radio>男</label>
-    </radio-group>
-  </view>
-  <view class='item'>
-    <text class='name'>生日</text>
-    <view class='info'>
-      <picker mode="date" value="{{date}}" start="2015-09-01" end="{{today}}" bindchange="bindDateChange">
-        <view class="picker">
-          {{userInfo.birthday}}
-        </view>
-      </picker>
+    <view class='item'>
+      <text class='name'>性别</text>
+      <radio-group class='info'  name="sex">
+        <label>
+          <radio value="女" checked="{{sex === '女'}}"></radio>
+          女
+        </label>
+        <label>
+          <radio value="男" checked="{{sex === '男'}}"></radio>
+          男
+        </label>
+      </radio-group>
     </view>
-  </view>
-  <view class='item'>
-    <text class='name'>手机号码</text>
-    <view class='info'>
-      <input type="number" placeholder="188****3566" />
+    <view class='item'>
+      <text class='name'>生日</text>
+      <view class='info'>
+        <picker mode="date" value="{{date}}" start="2015-09-01" end="{{today}}" bindchange="bindDateChange" name="birthday">
+          <view class="picker">{{date}}</view>
+        </picker>
+      </view>
     </view>
-  </view>
-  <view class='item'>
-    <text class='name'>身份证号</text>
-    <view class='info'>
-      <input type="number" placeholder="330***********1234" />
+    <view class='item'>
+      <text class='name'>手机号码</text>
+      <view class='info'>
+        <input type="number" value="188****3566" name="tel" />
+      </view>
     </view>
-  </view>
-  <view class='item'>
-    <text class='name'>工号</text>
-    <view class='info'>
-      <input type="number" placeholder="65456316" />
+    <view class='item'>
+      <text class='name'>身份证号</text>
+      <view class='info'>
+        <input type="number" value="330***********1234" name="idCard" />
+      </view>
     </view>
-  </view>
-  <view class='item'>
-    <text class='name'>登录密码</text>
-    <view class='info'>
-      <input password type="number" placeholder="******" />
+    <view class='item'>
+      <text class='name'>工号</text>
+      <view class='info'>
+        <input type="number" value="65456316" name="workId" />
+      </view>
     </view>
-  </view>
-  <view class='btn-1'>
-    <button type='submit' bindtap="vv">保存</button>
-  </view>
+    <view class='item'>
+      <text class='name'>登录密码</text>
+      <view class='info'>
+        <input password type="number" value="******" name="passWord" />
+      </view>
+    </view>
+    <view class='btn-1'>
+      <button form-type="submit">保存</button>
+    </view>
+  </form>
 </view>

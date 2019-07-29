@@ -5,7 +5,7 @@
             <image src="{{userInfo.userHead}}" mode="widthFix"></image>
         </view>
         <view class="info">
-            <view class="name">{{userInfo.name}}</view>
+            <view class="name">{{userInfoForm.name}}</view>
             <view class="txt">
                 加入时间：
                 <text>{{userInfo.joinDate}}</text>

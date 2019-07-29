@@ -5,14 +5,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-   
-      haad: '../../../images/pic-1.png',
-      user: 'admin',
-      name: '王**',
-      sex: '男',
-      date: '2018-08-08',
-      userInfo: {}
- 
+    head: '../../../images/pic-1.png',
+    user: 'admin',
+    name: '王**',
+    sex: '男',
+    date: '2018-08-08',
+    userInfo: {}
   },
   bindDateChange: function (e) {
     console.log('picker发送选择改变，携带值为', e.detail.value);
@@ -32,16 +30,37 @@ Page({
       index1: e.detail.value
     });
   },
-  // 监听用户是否在个人信息页面发生了信息更改，同步更新传入的本地缓存数据
+
   changeValue: function (e) {
-    var val = e.detail.value;
-    // 重新设置下本地缓存对象
-    this.data.userInfo.name = val;
-    wx.setStorageSync('userInfo', this.data.userInfo);
-  }, 
-/*   vv: function () {
-    console.log(userInfo);
-  }, */
+    // var orderInfo = e.detail.value;
+    // 提交表单时将页面内的this.data里的存储用户信息的对象赋值
+    console.log("表单值:", e.detail.value);
+    var dataF = e.detail.value;
+    // 有个问题，每次进入该页面都用的data里的数据
+    this.setData({
+      user: dataF.nickname,
+      name: dataF.name,
+      sex: dataF.sex,
+      date: dataF.birthday,
+      userInfo: e.detail.value
+    });
+    // console.log(this.data.name);
+    wx.setStorage({
+      key: 'orderInfo',
+      // 存入缓存的数据
+      data: this.data.userInfo,
+      success: function (res) {
+        // 提交成功后显示提示信息
+        wx.showToast({
+          title: "保存成功"
+        });
+      }
+    });
+ 
+    /*  wx.navigateTo({
+       url: '../my'
+     }); */
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -65,11 +84,7 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    var userInfo = wx.getStorageSync('userInfo');
-    console.log(userInfo);
-    this.setData({
-      userInfo: userInfo
-    });
+
   },
 
   /**

@@ -47,14 +47,21 @@ Page({
       link: 'information/information'
     }],
     // 个人信息，该信息要传递进个人信息中
-    userInfo: {}
+    userInfo: {
+      id: '123',
+      // name: '何慧峰',
+      userHead: '../../images/userhead1.png',
+      joinDate: '2019-01-01',
+      tjr: '王小二'
+    },
+    userInfoForm: {}
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+
   },
 
   /**
@@ -69,7 +76,7 @@ Page({
    */
   onShow: function () {
     // 定义用户信息，通过类似于Vuex的store，微信的本地缓存函数wx.setStorageSync(定义的存储对象的别名，要存储的对象)，在其他的页面直接通过wx.getS
-    var userInfo = {
+    /* var userInfo = {
       id: '123',
       name: '何慧峰',
       userHead: '../../images/userhead1.png',
@@ -82,7 +89,21 @@ Page({
     this.setData({
       userInfo: userInfo
     });
-    wx.setStorageSync('userInfo', userInfo);
+    wx.setStorageSync('userInfo', userInfo); */
+    var that = this;
+    wx.getStorage({
+      key: 'orderInfo',
+      success: function (res) {
+        // 拼接对象
+        console.log(res);
+        // 拼接后数值不更新？
+        // var allInfo = {...res.data, ...that.data.userInfo};
+        that.setData({
+          userInfoForm: res.data
+        });
+        // console.log(that.data.userInfo);
+      }
+    });
   },
 
   /**
