@@ -6,11 +6,12 @@ Page({
    */
   data: {
    
-      haad: '../../images/pic-1.png',
+      haad: '../../../images/pic-1.png',
       user: 'admin',
       name: '王**',
       sex: '男',
-      date: '2018-08-08'
+      date: '2018-08-08',
+      userInfo: {}
  
   },
   bindDateChange: function (e) {
@@ -31,6 +32,16 @@ Page({
       index1: e.detail.value
     });
   },
+  // 监听用户是否在个人信息页面发生了信息更改，同步更新传入的本地缓存数据
+  changeValue: function (e) {
+    var val = e.detail.value;
+    // 重新设置下本地缓存对象
+    this.data.userInfo.name = val;
+    wx.setStorageSync('userInfo', this.data.userInfo);
+  }, 
+/*   vv: function () {
+    console.log(userInfo);
+  }, */
   /**
    * 生命周期函数--监听页面加载
    */
@@ -54,7 +65,11 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    var userInfo = wx.getStorageSync('userInfo');
+    console.log(userInfo);
+    this.setData({
+      userInfo: userInfo
+    });
   },
 
   /**

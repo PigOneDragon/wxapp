@@ -2,17 +2,17 @@
     <image src="../../images/w-t.png" class="top-bg"></image>
     <view class="user">
         <view class="user-img">
-            <image src="../../images/userhead1.png" mode="widthFix"></image>
+            <image src="{{userInfo.userHead}}" mode="widthFix"></image>
         </view>
         <view class="info">
-            <view class="name">何慧峰</view>
+            <view class="name">{{userInfo.name}}</view>
             <view class="txt">
                 加入时间：
-                <text>2019-01-01</text>
+                <text>{{userInfo.joinDate}}</text>
             </view>
             <view class="txt">
                 您是由
-                <text>王小二</text>
+                <text>{{userInfo.tjr}}</text>
                 推荐加入的
             </view>
         </view>
@@ -32,47 +32,14 @@
     </view>
 </view>
 <view class="detail">
-    <view class="item">
-        <navigator class="con">
+    <view class="item" wx:for="{{infoList}}" wx:key="item.id">
+        <navigator class="con" url="{{item.link}}">
             <view class="icon">
-                <image src="../../images/w-1.png" mode="aspectFit"></image>
+                <image src="{{item.imgUrl}}" mode="aspectFit"></image>
             </view>
             <view class="r">
                 <image src="../../images/w-y1.png" mode="aspectFill" class="arrow"></image>
-                <view class="txt">个人信息</view>
-            </view>
-        </navigator>
-    </view>
-    <view class="item">
-        <navigator class="con">
-            <view class="icon">
-                <image src="../../images/w-1.png" mode="aspectFit"></image>
-            </view>
-            <view class="r">
-                <image src="../../images/w-y1.png" mode="aspectFill" class="arrow"></image>
-                <view class="txt">个人信息</view>
-            </view>
-        </navigator>
-    </view>
-    <view class="item">
-        <navigator class="con">
-            <view class="icon">
-                <image src="../../images/w-1.png" mode="aspectFit"></image>
-            </view>
-            <view class="r">
-                <image src="../../images/w-y1.png" mode="aspectFill" class="arrow"></image>
-                <view class="txt">个人信息</view>
-            </view>
-        </navigator>
-    </view>
-    <view class="item">
-        <navigator class="con">
-            <view class="icon">
-                <image src="../../images/w-1.png" mode="aspectFit"></image>
-            </view>
-            <view class="r">
-                <image src="../../images/w-y1.png" mode="aspectFill" class="arrow"></image>
-                <view class="txt">个人信息</view>
+                <view class="txt">{{item.text}}</view>
             </view>
         </navigator>
     </view>
