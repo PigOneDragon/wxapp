@@ -1,0 +1,9 @@
+<!--miniprogram/pages/wangjimima/wangjimima.wxml-->
+<view class='m-pwd'>
+  <input type="number" value='180****6200' placeholder-class="vcode_default" placeholder="请输入手机号" auto-focus=''></input>
+  <view class='auth'>
+    <input type='text' value='' placeholder-class="vcode_default" placeholder='短信验证码'></input>
+    <view class='code' bindtap="getVcode">获取验证证</view>
+  </view>
+  <view class='next' bindtap="">下一步</view>
+</view>
