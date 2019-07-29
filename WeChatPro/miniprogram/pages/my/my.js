@@ -104,6 +104,19 @@ Page({
         // console.log(that.data.userInfo);
       }
     });
+    wx.getStorage({
+      key: 'userImgs',
+      success: function (res) {
+        // 拼接对象
+        console.log(res);
+        // 拼接后数值不更新？
+        // var allInfo = {...res.data, ...that.data.userInfo};
+        that.setData({
+          ["userInfo.userHead"]: res.data
+        });
+        // console.log(that.data.userInfo);
+      }
+    });
   },
 
   /**

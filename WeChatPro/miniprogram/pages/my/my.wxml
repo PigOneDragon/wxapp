@@ -2,7 +2,7 @@
     <image src="../../images/w-t.png" class="top-bg"></image>
     <view class="user">
         <view class="user-img">
-            <image src="{{userInfo.userHead}}" mode="widthFix"></image>
+            <image src="{{userInfo.userHead}}" mode="aspectFill"></image>
         </view>
         <view class="info">
             <view class="name">{{userInfoForm.name}}</view>

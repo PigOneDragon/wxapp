@@ -3,7 +3,7 @@
   <form  bindsubmit="changeValue">
     <view class='item'>
       <text class='name'>头像</text>
-      <view class='img'>
+      <view class='img' bindtap="chooseUserImg">
         <image src='{{head}}' mode="aspectFill"></image>
       </view>
     </view>

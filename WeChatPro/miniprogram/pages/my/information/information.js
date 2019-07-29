@@ -56,10 +56,33 @@ Page({
         });
       }
     });
- 
+
     /*  wx.navigateTo({
        url: '../my'
      }); */
+  },
+  // 选择头像
+  chooseUserImg: function () {
+    var that = this;
+    wx.chooseImage({
+      count: 1,
+      sizeType: ['original', 'compressed'],
+      sourceType: ['album', 'camera'],
+      success(res) {
+        // tempFilePath返回值为数值，需转换成字符串
+        var tempFilePaths = res.tempFilePaths[0];
+        console.log(tempFilePaths,that);
+        // 更新当前页面
+        that.setData({
+          head: tempFilePaths
+        });
+        // 放入缓存
+        wx.setStorage({
+          key: 'userImgs',
+          data: that.data.head
+        });
+      }
+    });
   },
   /**
    * 生命周期函数--监听页面加载
