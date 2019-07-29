@@ -1,0 +1,11 @@
+<!--miniprogram/pages/wangjimima/wangjimima.wxml-->
+<template name="pwd">
+  <view class='m-pwd'>
+    <input type="number" value='{{telValue}}' placeholder-class="vcodeDefault" placeholder="{{telPlaceholder}}" auto-focus=''></input>
+    <view class='auth'>
+      <input type='text' value='' placeholder-class="vcode_default" placeholder='{{authPlaceholder}}'></input>
+      <view class='code' bindtap="getVcode">{{auth}}</view>
+    </view>
+    <view class='next' bindtap="">{{btn}}</view>
+  </view>
+</template>

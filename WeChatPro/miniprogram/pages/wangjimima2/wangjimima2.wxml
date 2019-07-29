@@ -1,0 +1,3 @@
+<!--miniprogram/pages/wangjimima2/wangjimima2.wxml-->
+<import src="../template/pwd/pwd.wxml" />
+<template is="pwd" wx:for="{{pwd}}" data="{{...item}}"></template>

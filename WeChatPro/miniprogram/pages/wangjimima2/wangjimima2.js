@@ -1,4 +1,4 @@
-// miniprogram/pages/wangjimima/wangjimima.js
+// miniprogram/pages/wangjimima2/wangjimima2.js
 Page({
 
   /**
@@ -6,67 +6,66 @@ Page({
    */
   data: {
     pwd: [{
-      telValue: '180****6200',
-      telPlaceholder: '请输入手机号',
-      authPlaceholder: '短信验证码',
+      telValue: '请输入新密码',
+      telPlaceholder: '请输入新密码',
+      authPlaceholder: '请重复新密码',
       auth: '获取验证证',
-      btn: '下一步'
+      btn: '提交'
     }]
   },
-
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function(options) {
+  onLoad: function (options) {
 
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function() {
+  onReady: function () {
 
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function() {
+  onShow: function () {
 
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function() {
+  onHide: function () {
 
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload: function() {
+  onUnload: function () {
 
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh: function() {
+  onPullDownRefresh: function () {
 
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function() {
+  onReachBottom: function () {
 
   },
 
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function() {
+  onShareAppMessage: function () {
 
   }
 })

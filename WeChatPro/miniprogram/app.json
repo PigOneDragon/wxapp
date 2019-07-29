@@ -12,8 +12,8 @@
     "pages/index/wangdian/map/map",
     "pages/leijishouyi/leijishouyi",
     "pages/wangjimima/wangjimima",
-    "pages/login/login"
-    
+    "pages/login/login",
+    "pages/wangjimima2/wangjimima2"
   ],
   "window": {
     "backgroundColor": "#f5f5f5",

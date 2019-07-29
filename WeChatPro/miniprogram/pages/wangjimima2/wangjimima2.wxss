@@ -1,0 +1,8 @@
+/* miniprogram/pages/wangjimima2/wangjimima2.wxss */
+@import "../template/pwd/pwd.wxss";
+.m-pwd .code{
+  display: none;
+}
+.m-pwd input{
+  color: #cccccc;
+}
