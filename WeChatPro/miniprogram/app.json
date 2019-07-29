@@ -10,7 +10,8 @@
     "pages/index/hots/hots",
     "pages/index/wangdian/wangdian",
     "pages/index/wangdian/map/map",
-    "pages/leijishouyi/leijishouyi"
+    "pages/leijishouyi/leijishouyi",
+    "pages/wangjimima/wangjimima"
   ],
   "window": {
     "backgroundColor": "#f5f5f5",

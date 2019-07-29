@@ -11,7 +11,7 @@
   <view class='item'  wx:for="{{txtlist}}" wx:key="*this">
     <view class='left'>
       <text class='txt-3'>{{item.name}}</text>
-      <text class='data'> {{time}}</text>
+      <text class='data'> {{item.date}}</text>
     </view>
     <view class='right'>+{{item.num}}</view>
   </view>

@@ -9,15 +9,18 @@ Page({
     txtlist: [{
       id: '001',
       name: '保单拥金',
-      num: '10'
+      num: '10',
+      date: new Date().toLocaleDateString().replace(/\//g,' -')
     }, {
       id: '002',
       name: '保单拥金',
-      num: '20'
+      num: '20',
+      date: new Date().toLocaleDateString().replace(/\//g,' - ')
     }, {
       id: '003',
       name: '保单拥金',
-      num: '30'
+      num: '30',
+      date: new Date().toLocaleDateString().replace(/\//g,' - ')
     }]
   },
   /**
@@ -25,12 +28,18 @@ Page({
    */
   onLoad: function (options) {
 
+    /*
+    系统日期 方法二
     // 调用函数时，传入new Date()参数，返回值是日期和时间
     var time = util.formatTime(new Date());
     // 再通过setData更改Page()里面的data，动态更新页面的数据
     this.setData({
       time: time
     });
+    wxml
+    <text class='data'> {{time}}</text>
+    */
+
   },
 
   /**

@@ -15,6 +15,7 @@
   background: #fff;
 }
 
+
 .item .name {
   font-size: 30rpx;
   color: #3f3f3f;
