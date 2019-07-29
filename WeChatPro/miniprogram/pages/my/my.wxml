@@ -26,7 +26,7 @@
             <view class="txt">累计收入</view>
             <view class="num">
                 1231
-                <navigator class="more">明细</navigator>
+                <navigator class="more" url="../leijishouyi/leijishouyi">明细</navigator>
             </view>
         </view>
     </view>
