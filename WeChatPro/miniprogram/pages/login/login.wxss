@@ -1,0 +1,81 @@
+/* pages/login/login.wxss */
+page {
+    background-color: #fff;
+}
+
+.box {
+    width: 100%;
+    padding: 90rpx 75rpx 0;
+    box-sizing: border-box;
+}
+
+.swiper-tab {
+    display: flex;
+    height: 90rpx;
+    line-height: 90rpx;
+    border-radius: 90rpx;
+    overflow: hidden;
+    background-color: #e8fcf5;
+    color: #009b62;
+    font-size: 28rpx;
+    text-align: center;
+}
+
+.swiper-tab .item {
+    flex: 1;
+}
+
+.swiper-tab .item.on {
+    background-color: #009b62;
+    color: #ffffff;
+}
+
+.m-form {
+    padding: 40rpx 0;
+}
+
+.m-form .inp,
+.m-form .password,
+.m-form .submitBtn {
+    display: block;
+    height: 90rpx;
+    border-radius: 90rpx;
+    background-color: #edf5f7;
+    color: #cccccc;
+    font-size: 28rpx;
+    padding: 0 25rpx;
+    margin-bottom: 30rpx;
+}
+.m-form .bot{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30rpx;
+}
+.m-form .bot .item{
+    flex:1;
+    display: block;
+    font-size: 30rpx;
+    color: #aaaaaa;
+}
+.m-form .bot .forget{
+    color: #009b62;
+    text-align: right;
+}
+.m-form .submitBtn ,
+.m-form .reg{
+    font-size: 32rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    border-radius: 100rpx;
+    background-color: #009b62;
+    color: #ffffff;
+    text-align: center;
+}
+.m-form .reg{
+    display: block;
+    background-color: #fdfdfd;
+    border:1px solid #f3f3f3;
+    line-height: 98rpx;
+    color: #5e524f;
+}
+

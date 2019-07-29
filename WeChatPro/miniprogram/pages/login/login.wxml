@@ -1,0 +1,47 @@
+<!-- pages/login/login.wxml -->
+<!-- 头部点击切换显示 -->
+<view class="box">
+    <view class="swiper-tab">
+        <view class="item {{currentTab==0?'on':''}}" data-current="0" bindtap="changeTabs">
+            手机号登录
+        </view>
+        <view class="item {{currentTab==1?'on':''}}" data-current="1" bindtap="changeTabs">
+            工号登录
+        </view>
+    </view>
+    <view class="m-form">
+        <form>
+            <!-- swiper切换 -->
+            <!-- <swiper current="{{currentTab}}" duration="300"  easing-function ="easeOutCubic" bindchange="swiperTab">
+                <swiper-item>
+                     手机号登录
+                    <view class="type">
+                        <input type="tel" class="inp" oninput="value=value.replace(/[^\d]/g,'')" maxlength="11" placeholder="手机号" />
+                        <input type="text" password placeholder="登录密码" class="password" />
+                    </view>
+                </swiper-item>
+                <swiper-item>
+                     工号登录
+                    <view class="type">
+                        <input type="text" placeholder="工号" class="inp" />
+                        <input type="text" password placeholder="登录密码" class="password" />
+                    </view>
+                </swiper-item>
+            </swiper> -->
+            <view class="type" wx:if="{{currentTab==0}}">
+                <input type="tel" class="inp" oninput="value=value.replace(/[^\d]/g,'')" maxlength="11" placeholder="手机号" />
+                <input type="text" password placeholder="登录密码" class="password" />
+            </view>
+            <view class="type"  wx:if="{{currentTab==1}}">
+                <input type="text" placeholder="工号" class="inp" />
+                <input type="text" password placeholder="登录密码" class="password" />
+            </view>
+            <button form-type="submit" class="submitBtn">立即登录</button>
+        </form>
+        <view class="bot">
+            <view class="item">你有账号吗？</view>
+            <navigator url="" class="item forget">忘记密码</navigator>
+        </view>
+        <navigator url="" class="reg">暂无账号，立即注册</navigator>
+    </view>
+</view>
