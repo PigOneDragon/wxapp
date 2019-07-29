@@ -11,6 +11,13 @@ Page({
       authPlaceholder: '请重复新密码',
       auth: '获取验证证',
       btn: '提交'
+    }],
+    pwd1: [{
+      telValue: '180****6200',
+      telPlaceholder: '请输入手机号',
+      authPlaceholder: '短信验证码',
+      auth: '获取验证证',
+      btn: '下一步'
     }]
   },
   /**
