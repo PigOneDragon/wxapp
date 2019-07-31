@@ -1,2 +1,45 @@
-<import src="../template/pwd/pwd.wxml" />
+<!-- <import src="../template/pwd/pwd.wxml" />
 <template is="pwd" wx:for="{{pwd}}" data="{{...item}}"></template>
+<template is="pwd" wx:for="{{pwd1}}" data="{{...item}}"></template> -->
+<view class='m-pwd'>
+    <form>
+        <!-- <swiper current="{{currentTab}}" duration="300"  bindchange="swiperTab">
+            <swiper-item>
+                <view class="box" wx:for="{{pwd1}}">
+                    <input type="number" value='{{item.telValue}}' placeholder-class="vcodeDefault" placeholder="{{item.telPlaceholder}}" auto-focus=''></input>
+                    <view class='auth'>
+                        <input type='text' value='' placeholder-class="vcode_default" placeholder='{{item.authPlaceholder}}'></input>
+                        <view class='code' bindtap="getVcode">{{item.auth}}</view>
+                    </view>
+                    <view class='next' bindtap="next">{{item.btn}}</view>
+                </view>
+            </swiper-item>
+            <swiper-item>
+                <view class="box" wx:for="{{pwd}}">
+                    <input type="number" value='{{item.telValue}}' placeholder-class="vcodeDefault" placeholder="{{item.telPlaceholder}}" auto-focus=''></input>
+                    <view class='auth'>
+                        <input type='text' value='' placeholder-class="vcode_default" placeholder='{{item.authPlaceholder}}'></input>
+                        <view class='code' bindtap="getVcode">{{auth}}</view>
+                    </view>
+                    <view class='next' bindtap="">{{item.btn}}</view>
+                </view>
+            </swiper-item>
+        </swiper> -->
+        <view class="box" wx:for="{{pwd1}}" wx:if="{{show}}">
+            <input type="number" value='{{item.telValue}}' placeholder-class="vcodeDefault" placeholder="{{item.telPlaceholder}}" auto-focus=''></input>
+            <view class='auth'>
+                <input type='text' value='' placeholder-class="vcode_default" placeholder='{{item.authPlaceholder}}'></input>
+                <view class='code' bindtap="getVcode">{{item.auth}}</view>
+            </view>
+            <view class='next' bindtap="next">{{item.btn}}</view>
+        </view>
+        <view class="box" wx:for="{{pwd}}" wx:if="{{!show}}">
+            <input type="number" value='{{item.telValue}}' placeholder-class="vcodeDefault" placeholder="{{item.telPlaceholder}}" auto-focus=''></input>
+            <view class='auth'>
+                <input type='text' value='' placeholder-class="vcode_default" placeholder='{{item.authPlaceholder}}'></input>
+                <view class='code' bindtap="getVcode">{{auth}}</view>
+            </view>
+            <view class='next' bindtap="">{{item.btn}}</view>
+        </view>
+    </form>
+</view>
